@@ -28,6 +28,8 @@ BreachType classifyTemperatureBreach(
       lowerLimit = 0;
       upperLimit = 40;
       break;
+    default:
+    break;
   }
   return inferBreach(temperatureInC, lowerLimit, upperLimit);
 }
