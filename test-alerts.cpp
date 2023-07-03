@@ -15,5 +15,9 @@ TEST_CASE("infers the breach according to test high limit") {
 }
 
 TEST_CASE("send to email test") {
-  REQUIRE(inferBreach(35, 20, 30) == TOO_HIGH);
+  REQUIRE(sendToEmail(TOO_LOW)  == TOO_HIGH);
+}
+
+TEST_CASE("send to email test") {
+  REQUIRE(sendToEmail(TOO_HIGH)  == TOO_HIGH);
 }
