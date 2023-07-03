@@ -18,13 +18,13 @@ TEST_CASE("clasify temprature breach test") {
   REQUIRE( classifyTemperatureBreach(PASSIVE_COOLING, 30) == NORMAL);
 }
 
-TEST_CASE("clasify temprature breach test") {
+TEST_CASE("clasify temprature breach test1") {
   REQUIRE( classifyTemperatureBreach(PASSIVE_COOLING, 40) == TOO_HIGH);
 }
-TEST_CASE("clasify temprature breach test") {
+TEST_CASE("clasify temprature breach test2") {
   REQUIRE( classifyTemperatureBreach(HI_ACTIVE_COOLING, 40) == NORMAL);
 }
 
-TEST_CASE("clasify temprature breach test") {
+TEST_CASE("clasify temprature breach test3") {
   REQUIRE( classifyTemperatureBreach(HI_ACTIVE_COOLING, 48) == TOO_HIGH);
 }
